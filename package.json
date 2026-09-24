@@ -1,0 +1,21 @@
+{
+  "name": "capstone-a05-ticket-support",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capstone A05 - Tiket Bantuan Pelanggan dengan RabbitMQ dan PostgreSQL",
+  "main": "gateway/server.js",
+  "scripts": {
+    "gateway": "node gateway/server.js",
+    "worker": "node layanan/worker.js",
+    "u1": "node scripts/u1.js",
+    "u2": "node scripts/u2.js",
+    "u3": "node scripts/u3.js",
+    "u4": "node scripts/u4.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
+}
